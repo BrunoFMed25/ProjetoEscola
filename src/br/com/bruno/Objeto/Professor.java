@@ -13,13 +13,12 @@ import java.util.ArrayList;
  */
 public class Professor {
     
-    private ArrayList disciplinas;
+    
     private Integer cargahoraria;
     private float valorHora;
     private Integer idade;
 
-    public Professor(ArrayList disciplinas, Integer cargahoraria, float valorHora, Integer idade) {
-        this.disciplinas = disciplinas;
+    public Professor(Integer cargahoraria, float valorHora, Integer idade) {
         this.cargahoraria = cargahoraria;
         this.valorHora = valorHora;
         this.idade = idade;
@@ -31,18 +30,9 @@ public class Professor {
 
     @Override
     public String toString() {
-        return "Professor{" + "disciplinas=" + disciplinas + ", cargahoraria=" + cargahoraria + ", valorHora=" + valorHora + ", idade=" + idade + '}';
+        return "Professor{" + ", cargahoraria=" + cargahoraria + ", valorHora=" + valorHora + ", idade=" + idade + '}';
     }
     
-    
-
-    public ArrayList getDisciplinas() {
-        return disciplinas;
-    }
-
-    public void setDisciplinas(ArrayList disciplinas) {
-        this.disciplinas = disciplinas;
-    }
 
     public Integer getCargahoraria() {
         return cargahoraria;
